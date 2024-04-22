@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="442.0" prefWidth="240.0" spacing="20.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.postgresql_javafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="402.0" prefWidth="212.0">
+      <children>
+         <Label layoutX="21.0" layoutY="71.0" prefHeight="18.0" prefWidth="131.0" text="Your phone" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" />
+      
+          <Label fx:id="welcomeText" layoutX="21.0" layoutY="14.0" prefHeight="18.0" prefWidth="120.0" text="Your name" textFill="WHITE" />
+          <Button layoutX="19.0" layoutY="137.0" onAction="#sendData" prefHeight="26.0" prefWidth="150.0" text="Send Info" />
+         <Button layoutX="20.0" layoutY="174.0" mnemonicParsing="false" onAction="#getAllData" prefHeight="26.0" prefWidth="150.0" text="Get data" />
+         <TextField fx:id="email" layoutX="20.0" layoutY="35.0" />
+         <TextField fx:id="passwords" layoutX="20.0" layoutY="100.0" />
+         <Button layoutX="21.0" layoutY="284.0" mnemonicParsing="false" onAction="#getSorted" prefHeight="26.0" prefWidth="150.0" text="Sorted data" />
+         <TextField fx:id="key" layoutX="21.0" layoutY="236.0" />
+         <Label layoutX="21.0" layoutY="214.0" text="Sorted " textFill="WHITE" />
+      </children>
+   </AnchorPane>
+   <effect>
+      <Glow level="0.0" />
+   </effect>
+</VBox>
